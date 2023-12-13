@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../common/libs/css/master.css">
+    <link rel="stylesheet" type="text/css" href="../common/contents/css/math.css">
+
+    <!-- page css -->
+    <link rel="stylesheet" type="text/css" href="./css/proto_km_238.css">
+
+    <!-- 가이드 전용 -->
+
+</head>
+
+<body>
+<div id="wrap" class="math">
+    <header>
+        <!-- 탭과 겹치는 경우 : gap 추가 -->
+        <div class="title none" contenteditable="true">
+            <div class="bullet num orange inline">1.</div>
+            보기, 드래그앤드롭 확인
+        </div>
+    </header>
+    <main>
+        <div class="basicSlider contentsBox" data-slide-container="main">
+            <ul class="basicSlider_tabs" data-tabs="">
+                <li data-hover="">고정</li>
+                <li data-hover="">비고정</li>
+            </ul>
+            <ul class="basicSlider_slides" data-slides="">
+                <li class="page_1" data-quiz="dragDrop" data-quiz-name="dragDrop" data-option="answer"  data-total-complete-count="9">
+                    <h2>
+                        <ins class="dot"></ins>
+                        <span class="none">
+                            위치 고정, 수량 한정형
+                        </span>
+                    </h2>
+                    <section>
+<!--                        <div class="study_guide">-->
+<!--                            <em>숫자 카드</em>을 <em>드래그</em>하여 옮기세요.-->
+<!--                        </div>-->
+                        <div class="dragDropContainer bogi">
+                            <div class="it-start-wrap dragBox lineBox dragObjUL">
+                                <div class="bogi-icon"></div>
+                                <div class="js-dragObj dragObj dragObj_1 etc" data-name="drag-obj" data-index="1" data-value="0" data-drag-obj-answer="1">내용 1</div>
+                                <div class="js-dragObj dragObj dragObj_2 etc" data-name="drag-obj" data-index="2" data-value="0" data-drag-obj-answer="1">내용 2</div>
+                                <div class="js-dragObj dragObj dragObj_3 etc" data-name="drag-obj" data-index="3" data-value="0" data-drag-obj-answer="2">글상자</div>
+                                <div class="js-dragObj dragObj dragObj_4 etc" data-name="drag-obj" data-index="4" data-value="0" data-drag-obj-answer="2">
+                                    <img src="./images/proto_km_238/proto_km_238.jpg" alt="" style="width: 150px;">
+                                </div>
+                            </div>
+
+
+                            <div class="flex-wrap middle center it-end-wrap">
+                                <div class="js-dropArea dropArea dropArea_1" data-type="1" data-drop-area-answer="1"></div>
+                                <div class="js-dropArea dropArea dropArea_2" data-type="2" data-drop-area-answer="2"></div>
+                            </div>
+                        </div>
+<!--                        <div class="buttonContainer">-->
+<!--                            <button class="resetBtn it-btn reset" id="it_reset_btn" data-answer-btn="" data-type="reset"></button>-->
+<!--                        </div>-->
+                    </section>
+                </li>
+                <li class="page_2" data-quiz="dragDrop" data-quiz-name="dragDrop" data-option="answer,copy"  data-total-complete-count="9">
+                    <h2>
+                        <ins class="dot"></ins>
+                        <span class="none">
+                            위치 비고정, 수량 무제한형
+                        </span>
+                    </h2>
+                    <section>
+<!--                        <div class="study_guide">-->
+<!--                            <em>숫자 카드</em>을 <em>드래그</em>하여 옮기세요.-->
+<!--                        </div>-->
+                        <div class="dragDropContainer bogi">
+                            <div class="it-start-wrap dragBox lineBox dragObjUL">
+                                <div class="bogi-icon"></div>
+                                <div class="js-dragObj dragObj dragObj_1 etc" data-name="drag-obj" data-index="1" data-value="0" data-drag-obj-answer="0">내용 1</div>
+                                <div class="js-dragObj dragObj dragObj_2 etc" data-name="drag-obj" data-index="2" data-value="0" data-drag-obj-answer="0">내용 2</div>
+                                <div class="js-dragObj dragObj dragObj_3 etc" data-name="drag-obj" data-index="3" data-value="0" data-drag-obj-answer="0">글상자</div>
+                                <div class="js-dragObj dragObj dragObj_4 etc" data-name="drag-obj" data-index="4" data-value="0" data-drag-obj-answer="0">
+                                    <img src="./images/proto_km_238/proto_km_238.jpg" alt="" style="width: 150px;">
+                                </div>
+                            </div>
+
+
+                            <div class="flex-wrap middle center it-end-wrap">
+                                <div class="js-dropArea dropArea dropArea_1" data-type="1" data-drop-area-answer="0"></div>
+                                <div class="js-dropArea dropArea dropArea_2" data-type="2" data-drop-area-answer="0"></div>
+                            </div>
+                        </div>
+                        <!--                        <div class="buttonContainer">-->
+                        <!--                            <button class="resetBtn it-btn reset" id="it_reset_btn" data-answer-btn="" data-type="reset"></button>-->
+                        <!--                        </div>-->
+                    </section>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+
+</div>
+<div id="loadingContainer">
+    <div class="loadingIconAnimation"></div>
+</div>
+
+<script type="text/javascript" src="../common/libs/js/ts.js"></script>
+<script type="text/javascript" src="../common/libs/js/animate.js"></script>
+<script type="text/javascript" src="../common/libs/js/dragdrop.js"></script>
+<script type="text/javascript" src="../common/libs/js/slider.js"></script>
+<script type="text/javascript" src="../common/libs/js/popup.js"></script>
+<script type="text/javascript" src="../common/libs/js/scroll.js"></script>
+<script type="text/javascript" src="../common/libs/js/controller.js"></script>
+<script type="text/javascript" src="../common/libs/js/appear.js"></script>
+<script type="text/javascript" src="../common/libs/js/jquery.js"></script>
+<script type="text/javascript" src="../common/contents/js/quiz/quiz.js"></script>
+<script type="text/javascript" src="../common/contents/js/pageManager.js"></script>
+<script type="text/javascript" src="../common/contents/js/sprite.js"></script>
+<script type="text/javascript" src="../common/contents/js/kmCommon.js"></script>
+<script type="text/javascript" src="./js/contents.js"></script>
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+
+    }, false);
+
+</script>
+</body>
+</html>

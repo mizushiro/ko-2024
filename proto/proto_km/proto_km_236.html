@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../common/libs/css/master.css">
+    <link rel="stylesheet" type="text/css" href="../common/contents/css/math.css">
+
+    <!-- page css -->
+    <link rel="stylesheet" type="text/css" href="./css/proto_km_201.css">
+
+    <!-- 가이드 전용 -->
+    <style>
+        [contenteditable]{pointer-events: initial !important;}
+
+        .icon-char {
+            display: inline-block;
+            position: absolute;
+            cursor: pointer;
+            width: 93px;
+            height: 69px;
+            background: url(../common/contents/images/cha_ico_tip_btn.png) no-repeat;
+            margin-left: 20px;
+            left: 130px;
+            top: 30px;
+        }
+        .icon-char.orange {
+            display: inline-block;
+            position: absolute;
+            background: url(../common/contents/images/cha_ico_btn.png) no-repeat;
+            width: 93px;
+            height: 69px;
+            margin-left: 20px;
+            left: 300px;
+            top: 30px;
+        }
+        .icon-char.blinkOn.blinkOpacity {
+            animation: opacity 1.5s ease-in 3;
+        }
+
+        .pop_page_1 { top: 350px; }
+        .pop_page_2 { top: 350px; }
+        .pop_page_3 { bottom: 150px; }
+        .pop_page_4 { bottom: 150px; right: 00px; }
+
+
+        .characterBtn { bottom: 100px; }
+
+
+        p { display: flex; }
+        p .dot {
+            flex-shrink: 0;
+            align-self: flex-start;
+            width: 15px;
+            height: 15px;
+            border: 5px solid #f60;
+            border-radius: 50%;
+            background-color: #fff;
+            margin: 22px 13px 0 -2px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+<div id="wrap" class="math">
+    <header>
+        <!-- 탭과 겹치는 경우 : gap 추가 -->
+        <div class="title" contenteditable="true">
+            <div class="bullet num orange inline">1.</div>
+            도움말 확인
+        </div>
+    </header>
+    <main>
+        <div class="basicSlider contentsBox" data-slide-container="main">
+            <h2>
+                <ins class="dot"></ins>
+                <span class="none">
+                   Tip, 주의 사항
+                </span>
+            </h2>
+            <ul class="basicSlider_slides" data-slides="">
+                <li class="page_1" data-quiz="toggle">
+                    <div class="icon-char blinkOn blinkOpacity" data-hover="" data-popup-btn="1"></div>
+                    <div class="icon-char orange blinkOn blinkOpacity" data-hover="" data-popup-btn="2"></div>
+                    <div class="characterBtn help" data-hover="" data-popup-btn="3"><span>톡톡 도움말</span></div>
+                    <div class="popBtn more" data-hover="" data-popup-btn="4"><span>고령 사회</span></div>
+                </li>
+
+
+            </ul>
+        </div>
+    </main>
+
+    <section class="popup_container" data-popup-container="1">
+        <ul class="popup_pages">
+            <li class="min pop_page_1" data-popup-page="1" data-drag>
+                <h2 class="blue">Tip</h2>
+                <div class="popup_contents ls1">
+                    <p>
+                        옆면끼리 만나서 생긴 모서리의 길이로<br> 높이를 알 수 있어요.
+                    </p>
+                </div>
+
+                <div class="popup_closeBtn"></div>
+            </li>
+            <li class="min pop_page_2" data-popup-page="2" data-drag>
+                <h2 class="orange">주의!</h2>
+                <div class="popup_contents ls1">
+                    <p>
+                        옆면끼리 만나서 생긴 모서리의 길이로<br> 높이를 알 수 있어요.
+                    </p>
+                </div>
+
+                <div class="popup_closeBtn"></div>
+            </li>
+            <li class="min pop_page_3" data-popup-page="3">
+                <h2>톡톡 도움말</h2>
+                <div class="popup_contents ls1">
+                    <p>
+                        블릿 없는 <span class="pink"> 강조색</span>
+                    </p>
+                    <p><ins class="dot"></ins>블릿 있음</p>
+                </div>
+
+                <div class="popup_closeBtn"></div>
+            </li>
+            <li class="min pop_page_4" data-popup-page="4">
+                <h2>고령사회</h2>
+                <div class="popup_contents ls1">
+                    <p>
+                        블릿 없음
+                    </p>
+                    <p><ins class="dot"></ins>블릿 있음</p>
+                </div>
+
+                <div class="popup_closeBtn"></div>
+            </li>
+        </ul>
+    </section>
+
+
+</div>
+<div id="loadingContainer">
+    <div class="loadingIconAnimation"></div>
+</div>
+
+<script type="text/javascript" src="../common/libs/js/ts.js"></script>
+<script type="text/javascript" src="../common/libs/js/animate.js"></script>
+<script type="text/javascript" src="../common/libs/js/dragdrop.js"></script>
+<script type="text/javascript" src="../common/libs/js/slider.js"></script>
+<script type="text/javascript" src="../common/libs/js/popup.js"></script>
+<script type="text/javascript" src="../common/libs/js/scroll.js"></script>
+<script type="text/javascript" src="../common/libs/js/controller.js"></script>
+<script type="text/javascript" src="../common/libs/js/appear.js"></script>
+<script type="text/javascript" src="../common/libs/js/jquery.js"></script>
+<script type="text/javascript" src="../common/contents/js/quiz/quiz.js"></script>
+<script type="text/javascript" src="../common/contents/js/pageManager.js"></script>
+<script type="text/javascript" src="../common/contents/js/sprite.js"></script>
+<script type="text/javascript" src="../common/contents/js/kmCommon.js"></script>
+<script type="text/javascript" src="./js/contents.js"></script>
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+
+    }, false);
+
+</script>
+</body>
+</html>

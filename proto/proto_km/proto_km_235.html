@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../common/libs/css/master.css">
+    <link rel="stylesheet" type="text/css" href="../common/contents/css/math.css">
+
+    <link rel="stylesheet" type="text/css" href="./css/proto_km_201.css">
+
+    <!-- 가이드 전용 -->
+    <style>
+        [contenteditable]{pointer-events: initial !important;}
+
+        /*.pic-box {*/
+        /*    width: 100%;*/
+        /*    height: 390px;*/
+        /*    border: 0;*/
+        /*}*/
+        /*.pic-box .image-box, .pic-box .click-induced.pic {*/
+        /*    width: 100%;*/
+        /*    height: 100%;*/
+        /*    display: flex;*/
+        /*    justify-content: center;*/
+        /*    align-items: center;*/
+        /*}*/
+        /*.click-induced.pic::after {*/
+        /*    content: "";*/
+        /*    position: absolute;*/
+        /*    width: 49px;*/
+        /*    height: 49px;*/
+        /*    border-radius: 50%;*/
+        /*    border: 3px solid #ff8636;*/
+        /*    background: #f60 url(../common/contents/images/icon/icon_glass2.svg) center/24px no-repeat;*/
+        /*    box-sizing: border-box;*/
+        /*    cursor: pointer;*/
+        /*}*/
+        /*.image-box { background:url(./images/proto_km_235/proto_km_235_01.jpg) no-repeat 50% 50% / cover; width:100%; height:100%; }*/
+
+
+        .imgWrap { display: flex; margin-right: 30px; }
+        .imgWrap img { width: 100%; }
+
+    </style>
+</head>
+
+<body>
+<div id="wrap" class="math">
+    <header>
+        <!-- 탭과 겹치는 경우 : gap 추가 -->
+        <div class="title none" contenteditable="true">
+            <div class="bullet num orange inline">1.</div>
+            삽화 팝업 확인
+        </div>
+    </header>
+    <main>
+        <div class="basicSlider contentsBox" data-slide-container="main">
+            <ul class="basicSlider_tabs" data-tabs="">
+                <li data-hover="">가로형</li>
+                <li data-hover="">세로형</li>
+                <li data-hover="">풀팝업</li>
+            </ul>
+            <ul class="basicSlider_slides" data-slides="">
+                <li class="page_1">
+                    <div class="flex-wrap">
+                        <span class="imgWrap">
+                            <img src="./images/proto_km_235/proto_km_235_01.jpg" alt="">
+                            <button class="popBtn btn_1 zoomBtn" data-targetSlideNum="1" data-hover="" data-popup-btn="1"></button>
+                        </span>
+                        <span class="imgWrap">
+                            <img src="./images/proto_km_235/proto_km_235_01.jpg" alt="">
+                            <button class="popBtn btn_2 zoomBtn" data-targetSlideNum="2" data-hover="" data-popup-btn="1"></button>
+                        </span>
+                    </div>
+                </li>
+                <li class="page_2">
+                    <div class="flex-wrap">
+                        <span class="imgWrap">
+                            <img src="./images/proto_km_235/proto_km_235_02.jpg" alt="">
+                            <button class="popBtn btn_1 zoomBtn" data-targetSlideNum="1" data-hover="" data-popup-btn="2"></button>
+                        </span>
+                        <span class="imgWrap">
+                            <img src="./images/proto_km_235/proto_km_235_02.jpg" alt="">
+                            <button class="popBtn btn_2 zoomBtn" data-targetSlideNum="2" data-hover="" data-popup-btn="2"></button>
+                        </span>
+                        <span class="imgWrap">
+                            <img src="./images/proto_km_235/proto_km_235_02.jpg" alt="">
+                            <button class="popBtn btn_3 zoomBtn" data-targetSlideNum="3" data-hover="" data-popup-btn="2"></button>
+                        </span>
+                    </div>
+                </li>
+                <li class="page_3">
+                         <span class="imgWrap" style="width: 600px;">
+                            <img src="./images/proto_km_235/proto_km_235_03.jpg" alt="">
+                            <button class="popBtn btn_1 zoomBtn" data-hover="" data-popup-btn="3"></button>
+                        </span>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <section class="popup_container" data-popup-container="">
+        <ul class="popup_pages">
+            <li class="whole row pop_page_1" data-popup-page="1">
+                <div class="basicSlider contentsBox doItContent" data-slide-container="popup">
+                    <div class="moveButtonContainer" data-slide-btn-container="">
+                        <div class="basicSlider_btn prev off" data-btn-prev="" data-hover=""></div>
+                        <ul class="basicSlider_circle_tabs" data-tabs="">
+                            <li data-hover="" class=""></li>
+                            <li data-hover="" class=""></li>
+                        </ul>
+                        <div class="basicSlider_btn next" data-btn-next="" data-hover=""></div>
+                    </div>
+                    <ul class="basicSlider_slides" data-slides="">
+                        <li class="innerTab_1">
+                            삽화 팝업.<br>
+                            235의 탭 1만 돌림.<br>
+                            영역 내+화질 한도에서 최대한 크게 띄움
+                        </li>
+                        <li class="innerTab_2">
+                            삽화 팝업.<br>
+                            235의 탭 1만 돌림.<br>
+                            영역 내+화질 한도에서 최대한 크게 띄움
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="whole column pop_page_2" data-popup-page="2">
+                <div class="basicSlider contentsBox doItContent" data-slide-container="popup">
+                    <div class="moveButtonContainer" data-slide-btn-container="">
+                        <div class="basicSlider_btn prev off" data-btn-prev="" data-hover=""></div>
+                        <ul class="basicSlider_circle_tabs" data-tabs="">
+                            <li data-hover="" class=""></li>
+                            <li data-hover="" class=""></li>
+                            <li data-hover="" class=""></li>
+                        </ul>
+                        <div class="basicSlider_btn next" data-btn-next="" data-hover=""></div>
+                    </div>
+                    <ul class="basicSlider_slides" data-slides="">
+                        <li class="innerTab_1" >
+                            삽화 팝업.<br>
+                            235의 탭 2만 돌림.<br>
+                            영역 내+화질 한도에서 최대한 크게 띄움
+                        </li>
+                        <li class="innerTab_2">
+                            삽화 팝업.<br>
+                            235의 탭 2만 돌림.<br>
+                            영역 내+화질 한도에서 최대한 크게 띄움
+                        </li>
+                        <li class="innerTab_3">
+                            삽화 팝업.<br>
+                            235의 탭 2만 돌림.<br>
+                            영역 내+화질 한도에서 최대한 크게 띄움
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="whole pop_page_3 fullLine" data-popup-page="3">
+                <!--<h2 class="pop-tit">
+                    <ins class="special type3"></ins>
+                    <span></span>
+                </h2>-->
+                <div class="full_content">
+                    <div class="popup_contents">
+                        <div class="zoomContainer horizon container_1" data-zoom-container="">
+                            <div class="zoomArea">
+                                <div class="zoomImgContainer">
+                                    <div class="contentsBox">
+                                        <div class="flexBox">
+                                            <img src="./images/proto_km_235/proto_km_235_03.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="zoomContainer vertical container_1" data-zoom-container="">
+                            <div class="zoomArea">
+                                <div class="zoomImgContainer">
+<!--                                    <div class="contentsBox">-->
+<!--                                        <div class="flexBox">-->
+<!--                                            <img src="./images/proto_km_235/proto_km_235_03.jpg" alt="">-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+
+
+</div>
+<div id="loadingContainer">
+    <div class="loadingIconAnimation"></div>
+</div>
+
+<script type="text/javascript" src="../common/libs/js/ts.js"></script>
+<script type="text/javascript" src="../common/libs/js/animate.js"></script>
+<script type="text/javascript" src="../common/libs/js/dragdrop.js"></script>
+<script type="text/javascript" src="../common/libs/js/slider.js"></script>
+<script type="text/javascript" src="../common/libs/js/popup.js"></script>
+<script type="text/javascript" src="../common/libs/js/scroll.js"></script>
+<script type="text/javascript" src="../common/libs/js/controller.js"></script>
+<script type="text/javascript" src="../common/libs/js/appear.js"></script>
+<script type="text/javascript" src="../common/libs/js/jquery.js"></script>
+<script type="text/javascript" src="../common/contents/js/quiz/quiz.js"></script>
+<script type="text/javascript" src="../common/contents/js/pageManager.js"></script>
+<script type="text/javascript" src="../common/contents/js/sprite.js"></script>
+<script type="text/javascript" src="../common/contents/js/kmCommon.js"></script>
+<script type="text/javascript" src="./js/contents.js"></script>
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+
+    }, false);
+
+
+</script>
+</body>
+</html>

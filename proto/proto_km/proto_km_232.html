@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../common/libs/css/master.css">
+    <link rel="stylesheet" type="text/css" href="../common/contents/css/math.css">
+
+    <!-- page css -->
+    <link rel="stylesheet" type="text/css" href="./css/proto_km_201.css">
+
+    <!-- 가이드 전용 -->
+    <style>
+        [contenteditable]{pointer-events: initial !important;}
+        ._hide {opacity: 0; }
+        ._hide.on {opacity: 1; }
+        p { display: flex; }
+        p .dot {
+            flex-shrink: 0;
+            align-self: flex-start;
+            width: 15px;
+            height: 15px;
+            border: 5px solid #f60;
+            border-radius: 50%;
+            background-color: #fff;
+            margin: 22px 13px 0 -2px;
+            box-sizing: border-box;
+        }
+        .popBtn.mouse { top: 170px; left:50%; transform: translateX(-50%); }
+
+        .contentsBox .basicSlider_slides>li.on { top: 72px; }
+
+        .popBtn.img { top: 80px; }
+        .popBtn.img ._fng { top: 210px;left: 100px; }
+
+
+        .popup_pages .min.voca { top: 300px; left: 20px; }
+    </style>
+</head>
+
+<body>
+<div id="wrap" class="math">
+    <header>
+        <!-- 탭과 겹치는 경우 : gap 추가 -->
+        <div class="title none" contenteditable="true">
+            <div class="bullet num orange inline">1.</div>
+            클릭 유도 버튼 확인
+        </div>
+    </header>
+    <main>
+        <div class="basicSlider contentsBox" data-slide-container="main">
+            <!--				<ul class="basicSlider_tabs" data-tabs="">-->
+            <!--					<li data-hover="">물음 1</li>-->
+            <!--					<li data-hover="">기본 </li>-->
+            <!--					<li data-hover="">정답확인</li>-->
+            <!--				</ul>-->
+            <ul class="basicSlider_slides" data-slides="">
+                <div class="basicSlider contentsBox doItContent"  data-slide-container="">
+                    <div class="innerButtonContainer" data-slide-btn-container="">
+                        <ul class="innerSlider_tabs" data-tabs="">
+                            <li data-hover="">손가락버튼 텍스트 음영</li>
+                            <li data-hover="">선표시</li>
+                            <li data-hover="">마우스</li>
+                            <li data-hover="">어휘팝업</li>
+                        </ul>
+                    </div>
+                    <ul class="basicSlider_slides" data-slides="">
+                        <li class="innerTab_1">
+                            <div class="popBtn word" data-hover="" data-popup-btn="1" data-popup-parent="hidden">텍스트 음영</div>
+
+                            <div class="popBtn img">
+                                <img src="images/proto_km_232/proto_km_232.jpg" alt="" style="width: 600px;">
+                                <span class="click-finger-Btn blinkOn blinkOpacity _fng n1" data-popup-btn="2" data-hover=""></span>
+                            </div>
+
+                        </li>
+                        <li class="innerTab_2">
+                            <div class="popBtn figure square" data-hover="" data-popup-btn="2" data-popup-parent="hidden"></div>
+                            <div class="popBtn figure circle" data-hover="" data-popup-btn="2" data-popup-parent="hidden" style="margin-left: 100px;"></div>
+                            <div class="popBtn figure triangle" data-hover="" data-popup-btn="2" data-popup-parent="hidden" style="margin-left: 200px;">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </li>
+                        <li class="innerTab_3">
+                            <div class="popBtn mouse" data-hover="" data-popup-btn="2" data-popup-parent="hidden"></div>
+                        </li>
+                        <li class="innerTab_4">
+                            <div class="popBtn voca" data-hover="" data-popup-btn="3" data-popup-parent="hidden">어휘팝업</div>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+
+
+
+            </ul>
+        </div>
+    </main>
+
+    <section class="popup_container" data-popup-container="1">
+        <ul class="popup_pages">
+            <li class="min word pop_page_1" data-popup-page="1" data-drag>
+                <h2>일반팝업</h2>
+                <div class="popup_contents">
+                    <p>블릿 없음</p>
+                    <p><ins class="dot"></ins>블릿 있음</p>
+                </div>
+            </li>
+            <li class="fullLine whole image pop_page_1" data-popup-page="2">
+                <div class="full_content">
+                    <div class="text">
+                        풀팝업 확인용 텍스트
+                    </div>
+                </div>
+            </li>
+            <li class="min voca image pop_page_1" data-popup-page="3">
+                <h2>낱말 익히기</h2>
+                <div class="popup_contents">
+                    <p class="title">낱말</p>
+                    <p>낱말풀이</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+
+</div>
+<div id="loadingContainer">
+    <div class="loadingIconAnimation"></div>
+</div>
+
+<script type="text/javascript" src="../common/libs/js/ts.js"></script>
+<script type="text/javascript" src="../common/libs/js/animate.js"></script>
+<script type="text/javascript" src="../common/libs/js/dragdrop.js"></script>
+<script type="text/javascript" src="../common/libs/js/slider.js"></script>
+<script type="text/javascript" src="../common/libs/js/popup.js"></script>
+<script type="text/javascript" src="../common/libs/js/scroll.js"></script>
+<script type="text/javascript" src="../common/libs/js/controller.js"></script>
+<script type="text/javascript" src="../common/libs/js/appear.js"></script>
+<script type="text/javascript" src="../common/libs/js/jquery.js"></script>
+<script type="text/javascript" src="../common/contents/js/quiz/quiz.js"></script>
+<script type="text/javascript" src="../common/contents/js/pageManager.js"></script>
+<script type="text/javascript" src="../common/contents/js/sprite.js"></script>
+<script type="text/javascript" src="../common/contents/js/kmCommon.js"></script>
+<script type="text/javascript" src="./js/contents.js"></script>
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+
+    }, false);
+
+</script>
+</body>
+</html>

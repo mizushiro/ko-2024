@@ -1,0 +1,30 @@
+.page_3 .page-inner {
+    background: url('https://cdata2.tsherpa.co.kr/tsherpa/multimedia/Flash/2023/curri/E-curri06-math-P_2023/62/suh_p_0602_02_0203/images/suh_p_0602_02_0203_201_1/suh_p_0602_02_0203_201_1_1.png') no-repeat 50% 0 / 39%;
+}
+.page_3 .b1{top: 3px;left: 40px;}
+.page_3 .b2{top: 40px;left: 850px;}
+.page_3 .flex-center{padding-top: 250px;}
+
+
+.pop_page_1 .img{
+    width: 100%;
+    height: 100%;
+    background:#fff url("https://cdata2.tsherpa.co.kr/tsherpa/multimedia/Flash/2023/curri/E-curri06-math-P_2023/62/suh_p_0602_02_0203/images/suh_p_0602_02_0203_102_1/suh_p_0602_02_0203_102_1_2.png") no-repeat 50% 50% / cover;
+}
+.pop_page_1 .text {
+    position: absolute;
+    left: 70px;
+    top: 140px;
+    width: 495px;
+    text-align: justify;
+    letter-spacing: -1.2px;
+    word-break: break-word;
+}
+.pop_page_1 .text1 {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    font-size: 32px;
+    width: 580px;
+    word-break: keep-all;
+}

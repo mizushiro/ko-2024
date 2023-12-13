@@ -1,0 +1,42 @@
+.numCard.etc{width:54px; height:66px; background-image:url(../images/numCard_etc.png); background-size:auto 66px; background-position-x:calc(-54px * 10);}
+.numCard.etc[data-index="0"]{background-position-x:calc(-54px * (1 - 1));}
+.numCard.etc[data-index="1"]{background-position-x:calc(-54px * (2 - 1));}
+.numCard.etc[data-index="2"]{background-position-x:calc(-54px * (3 - 1));}
+.numCard.etc[data-index="3"]{background-position-x:calc(-54px * (4 - 1));}
+.numCard.etc[data-index="4"]{background-position-x:calc(-54px * (5 - 1));}
+.numCard.etc[data-index="5"]{background-position-x:calc(-54px * (6 - 1));}
+.numCard.etc[data-index="6"]{background-position-x:calc(-54px * (7 - 1));}
+.numCard.etc[data-index="7"]{background-position-x:calc(-54px * (8 - 1));}
+.numCard.etc[data-index="8"]{background-position-x:calc(-54px * (9 - 1));}
+.numCard.etc[data-index="9"]{background-position-x:calc(-54px * (10 - 1));}
+.numCard.etc.dot{background-position-x:calc(-54px * (11 - 1));}
+
+.study_guide{top:0; right:0;}
+.it-start-wrap{position: absolute; display: flex; align-items: center; justify-content: space-between; z-index:1;width: 580px; height: auto; left: 0px;top: 50px; margin: 0 auto;}
+
+
+.dragObj { position: absolute; }
+.dragObj_1 { top: 45px; left: 30px; }
+.dragObj_2 { top: 45px; left: 200px; }
+.dragObj_3 { top: 45px; left: 380px; }
+.dragObj_4 { top: 40px; left: 550px; }
+.dragObj {display:flex; align-items:center; justify-content:center; height: auto; padding:0 20px 0 40px;}
+.it-end-wrap{position: absolute; margin:40px 0 0;top: 180px;left: 0px; font-size: 40px; }
+.dropArea{display:flex; align-items:center; justify-content:space-around; flex-wrap: wrap;  width:410px; height:185px; background: #FDF3E7; border-radius:10px; margin:0 10px}
+.dropArea:nth-child(2){ background: #FFF9E5; }
+
+
+.it-start-wrap .dragObj.dragObjComplete{opacity:0;}
+.it-end-wrap .dragObj.dragObjComplete{position:static; top:0; left:0;}
+.it-btn,
+.it-btn.reset{background-image:url(../../common/contents/images/icon/icon_check.svg); background-repeat:no-repeat;background-position:15px center;background-size:22px auto;}
+.it-btn:before,
+.it-btn.reset:before{content:"다시 하기";padding-left:18px;}
+.colorBox.skyBlue {
+    color: #fff;
+    background-color: #5ca2e7;
+    position: absolute;
+    top: 30px;
+    left: 70px;
+}
+

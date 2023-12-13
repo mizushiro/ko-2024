@@ -1,0 +1,24 @@
+.innerTab_1 .img img{ width: 300px;}
+.innerTab_1 .img{
+    position: relative;
+    padding: 20px 50px 40px 20px;
+    background-color: #fff;
+    border-radius: 30px;
+    margin: 60px 20px 0 0;
+}
+.innerTab_1 .flex-wrap{
+    gap:90px;
+}
+.innerTab_1 .txt{position: absolute; color: #000;}
+.innerTab_1 .colorBox{position: absolute; color: #000;}
+.innerTab_1 .b1{top: -40px;left: 130px;}
+.innerTab_1 .b2{top: 290px;left: 280px;}
+.innerTab_1 .b3{top: 140px;left: -60px;}
+.innerTab_1 .t1{top: 20px;left: 30px;}
+.innerTab_1 .t2{top: 130px;left: 190px;}
+.innerTab_1 .t3{top: 20px;left: 310px;}
+.innerTab_1 .t4{top: 240px;left: 30px;}
+.innerTab_1 .t5{top: 326px;left: 163px;}
+.innerTab_1 .t6{top: 240px;left: 310px;}
+
+
