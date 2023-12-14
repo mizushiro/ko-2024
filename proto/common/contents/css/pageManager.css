@@ -387,6 +387,22 @@ h2 .none:before{
     margin: 0;
     border-radius: 0
 }
+.contentsBox.right.intro-class {
+    width:calc(100% - 40px);
+    border-radius:20px 20px 0 0;
+    background:url("../../contents/images/animal/intro-students.png") no-repeat 100.5% 100% #fff;
+    background-size:480px auto;
+    display:flex;
+    flex-direction:column;
+    padding:20px 40px 0 40px;
+}
+.contentsBox.right.intro-class .intro-next-tab {
+    flex:1;
+    display:flex;
+}
+.contentsBox.intro-class .popup_container {
+    position:absolute;
+}
 
 .contentsBox.board {
     width: 94%;
