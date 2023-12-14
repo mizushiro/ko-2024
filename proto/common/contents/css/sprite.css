@@ -57,7 +57,7 @@
 
 .characterImg.circle div:not(.nameBox) {
     position: absolute;
-    top: -16px;
+    top: 10px;
     left: 50%;
     width: 340px;
     height: 431px;
